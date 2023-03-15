@@ -8,8 +8,9 @@ const Course = ({courses}) => {
     return(
         <div>
            {courses.map((subject)=>{
-            <div>
             console.log(subject['name']);
+            <div>
+      
             <CourseName name={subject['name']} />
             </div>
            })}
