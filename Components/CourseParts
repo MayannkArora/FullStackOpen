@@ -1,0 +1,14 @@
+const CourseParts = (props) => {
+    return(
+        <div>
+                {props.map((part)=>{
+                    <p id={part['id']}>
+                        {part['subject']} has {part['exercises']}                        
+                    </p>
+                })}
+            
+        </div>
+    )
+}
+
+export default CourseParts
